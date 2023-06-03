@@ -12,7 +12,12 @@ const myMap = L.map('map', {
 
 
 
-// Add openstreetmap tiles
+// Add OpenStreetMap tiles:
+L.tileLayer('https://.tile.openstreetmap.org///.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    minZoom: '15',
+}).addTo(myMap)
+
 
 
 
