@@ -24,7 +24,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //Note: Replace 'https://.tile.openstreetmap.org///.png' with 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' in this copy/paste part in the Canvas activity instructions
 
 
-// Create and add a geolocation marker
+// Create and add a geolocation marker:
+const marker = L.marker([48.87007, 2.346453])
+marker.addTo(myMap).bindPopup('<p1><b>The Hoxton, Paris</b></p1>').openPopup()
+
 
 
 
